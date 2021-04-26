@@ -1,0 +1,132 @@
+html {
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+}
+
+header h1 a {
+    color: #17D4FE;
+    display: flex;
+    margin-left: -12rem;
+    
+}
+
+.nav_left {
+    margin-right: auto;
+}
+
+.nav_right {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+    margin-right: -12rem;
+}
+
+.logout_btn{
+    display: flex;
+    justify-content: right;
+    margin-right: -12rem;
+    margin-top: -2rem;
+}
+
+.login_msg{
+    display: flex;
+    justify-content: left;
+    margin-right: 2rem;
+}
+
+.welcome_note{
+    margin-top: 5rem;
+    font-size: 25px;
+}
+
+hr{
+    width: 50rem;
+    margin-left: -12.5rem;
+}
+
+.login_signup{
+    display: flex;
+    justify-content: right;
+    margin-right: -12rem;
+    margin-top: -7rem;
+}
+
+.content_body{
+    margin-top: 5rem;
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+    color: red;
+}
+
+body {
+    background: linear-gradient(#a38787, #09350b);
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+    font-family: cursive;
+    padding: 2rem 1.6rem 6rem 1.6rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem gray;
+}
+
+div {
+    max-width: 25rem;
+    margin: .5rem auto;
+    text-align: center;
+    font-family: cursive;
+}
+
+.btn1{
+    margin-right: 5px;
+}
+
+button{
+    margin-top: -7rem;
+    font-size:20px;
+    background-color:#0f71f1;
+    color:#fff;
+    border:200px;
+    font: 15px sans-serif;
+    font-weight: bold;
+    border-radius: 2px;
+    padding:.5rem .4rem .5rem .4rem;
+}
+
+button:hover{
+    background: #fff;
+    color: #44ee10;
+    border-radius: 2px;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+    -o-transition: all -0.75 ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.log_in{
+    width: 10rem;
+    margin-left: 3.8rem;
+}

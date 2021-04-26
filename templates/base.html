@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django BlogApp</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="div">
+        <header>
+            <div class="nav_left">
+                <h1><a href="{% url 'home' %}">Blogger's Den</a></h1>
+            </div>
+            <div class="nav_right">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}">New Blog Post</a>
+                {% else %}
+                    <p>You must be logged in to post</p>
+                {% endif %}
+            </div>
+        </header>
+        <hr />
+        {% if user.is_authenticated %}
+            <p class="login_msg">Hello {{ user.username }}!</p>
+            <p class="logout_btn"><a href="{% url 'logout' %}"><button>Log Out</button></a></p>
+        {% else %}
+            <p class="welcome_note">Hello! Welcome to Blogger's Den.</p>
+            <p class="login_signup"><a href="{% url 'login' %}"><button class="btn1">Log In</button></a><a href="{% url 'signup' %}"><button class="btn2">Sign Up</button></a></p>
+        {% endif %}
+    <div class="content_body">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+    </div>
+</body>
+</html>

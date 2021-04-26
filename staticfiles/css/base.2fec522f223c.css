@@ -1,0 +1,64 @@
+html {
+    background-color: snow;
+}
+
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+header h1 a {
+    color: #17D4FE;
+}
+
+.nav_left {
+    margin-right: auto;
+}
+
+.nav_right {
+     margin-top: 5rem;
+     margin-right: -8rem;
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+    color: red;
+}
+
+body {
+    background: #a38787;
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+    font-family: cursive;
+    padding: 2rem 1.6rem 6rem 1.6rem;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2rem gray;
+}
+
+div {
+    max-width: 25rem;
+    margin: .5rem auto;
+    text-align: center;
+    font-family: cursive;
+}
+
